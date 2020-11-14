@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots All Buttons/Button Primary 1`] = `
+<button
+  className="storybook-button storybook-button--medium storybook-button--primary"
+  style={null}
+  type="button"
+>
+  Test Text
+</button>
+`;
+
+exports[`Storyshots All Buttons/Button Secondary 1`] = `
+<button
+  className="storybook-button storybook-button--medium storybook-button--secondary"
+  secondary={true}
+  style={null}
+  type="button"
+>
+  Test Text
+</button>
+`;
+
+exports[`Storyshots All Buttons/Button Small Button 1`] = `
+<button
+  className="storybook-button storybook-button--small storybook-button--secondary"
+  style={null}
+  type="button"
+>
+  Test Text
+</button>
+`;
