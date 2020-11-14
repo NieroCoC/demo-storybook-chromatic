@@ -23,9 +23,23 @@ Secondary.args = {
   secondary: true,
 };
 
-export const SmallButton = (args) => <Button {...args} />;
+export const Small = (args) => <Button {...args} />;
 
-SmallButton.args = {
+Small.args = {
   label: "Test Text",
   size: "small",
+};
+
+export const Medium = (args) => <Button {...args} />;
+
+Medium.args = {
+  label: "Test Text",
+  size: "medium",
+};
+
+export const Large = (args) => <Button {...args} />;
+
+Medium.args = {
+  label: "Test Text",
+  size: "large",
 };
