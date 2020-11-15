@@ -7,6 +7,10 @@ export default {
   argTypes: {
     backgroundColor: { control: "color" },
   },
+  parameters: {
+    // Set the viewports in Chromatic at a component level.
+    chromatic: { viewports: [320, 1200] },
+  },
 };
 
 export const Primary = (args) => <Button {...args} />;
@@ -39,7 +43,7 @@ Medium.args = {
 
 export const Large = (args) => <Button {...args} />;
 
-Medium.args = {
+Large.args = {
   label: "Test Text",
   size: "large",
 };
