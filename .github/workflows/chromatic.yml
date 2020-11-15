@@ -16,8 +16,7 @@ jobs:
         — uses: actions/checkout@v1
         — run: yarn install
         — uses: chromaui/action@releases/v1
-          with:
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          # 👇 Chromatic projectToken, refer to the manage page to obtain it.
-          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+            with:
+            token: ${{ secrets.GITHUB_TOKEN }}
+            # 👇 Chromatic projectToken, refer to the manage page to obtain it.
+            projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
