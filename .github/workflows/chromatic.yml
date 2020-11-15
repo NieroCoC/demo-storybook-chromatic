@@ -1,22 +1,15 @@
-# .github/workflows/chromatic.yml
+name: “Chromatic”
+on:
+  push
 
-# Workflow name
-name: 'Chromatic Deployment'
-
-# Event for the workflow
-on: push
-
-# List of jobs
 jobs:
-  chromatic-deployment:
-    # Operating System
-    runs-on: ubuntu-latest
-    # Job steps
-    steps:
-        — uses: actions/checkout@v1
-        — run: yarn install
-        — uses: chromaui/action@releases/v1
-            with:
-            token: ${{ secrets.GITHUB_TOKEN }}
-            # 👇 Chromatic projectToken, refer to the manage page to obtain it.
-            projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+  test:
+  runs-on: ubuntu-latest
+  steps:
+  — uses: actions/checkout@v1
+  — run: yarn install
+  — uses: chromaui/action@releases/v1
+    with:
+      token: ${{ secrets.GITHUB_TOKEN }}
+      projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+            
